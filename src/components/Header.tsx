@@ -1,5 +1,3 @@
-import { MenuIcon, MoreHorizontal, SearchIcon } from "lucide-react";
-
 import {
   Popover,
   PopoverContent,
@@ -10,14 +8,13 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Separator } from "./ui/separator";
 import Link from "next/link";
 import { Settings } from "./Settings";
+import { NavigationMenu } from "./NavigationMenu";
 
 
 export function Header() {
   return (
-    <header className="h-14 w-full bg-zinc-300 dark:bg-zinc-800 flex items-center justify-between px-3 absolute top-0">
-      <button>
-        <MenuIcon className="text-black dark:text-gray-200 text-base" size={24} />
-      </button>
+    <header className="h-14 w-full bg-zinc-100 shadow dark:bg-zinc-800 flex items-center justify-between px-3 absolute top-0">
+      <NavigationMenu />
 
       <h1 className="text-2xl text-black dark:text-gray-200 font-semibold">Fala Student!</h1>
 
