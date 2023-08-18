@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { CalendarCheck2, MessageCircle, Backpack, Clock, ClipboardList } from 'lucide-react'
+import { CalendarCheck2, MessageCircle, Backpack, Clock, ClipboardList, Users } from 'lucide-react'
 
 interface LinkNavigationProps {
 
@@ -13,6 +13,9 @@ export function LinkNavigation(props : LinkNavigationProps){
         </li>
         <li >
           <Link className="flex items-center gap-3 hover:underline" href='/chat'> <MessageCircle /> Chat</Link>
+        </li>
+        <li >
+          <Link className="flex items-center gap-3 hover:underline" href='/teams'> <Users /> Equipes</Link>
         </li>
         <li >
           <Link className="flex items-center gap-3 hover:underline" href='/'> <Backpack /> Matérias</Link>

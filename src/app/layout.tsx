@@ -20,12 +20,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
-      <body className='bg-zinc-50 dark:bg-zinc-900 font-body'>
+      <body className='bg-zinc-100 dark:bg-zinc-900 font-body flex flex-col min-h-screen'>
         <ThemeContextProvider>
-        <Header />
-          <PageWrapper>
-            {children}
-          </PageWrapper>
+            <Header />
+            <div className='flex-1 flex'>
+              {children}
+            </div>
         </ThemeContextProvider>
       </body>
     </html>

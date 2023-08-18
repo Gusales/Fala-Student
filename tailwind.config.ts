@@ -16,6 +16,10 @@ module.exports = {
       },
     },
     extend: {
+      gridTemplateColumns: {
+        'auto-fill-240': 'repeat(auto-fill, minmax(240px, 1fr))',
+        'auto-fit-240': 'repeat(auto-fit, minmax(240px, 1fr))',
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
