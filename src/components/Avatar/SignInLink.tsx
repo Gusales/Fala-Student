@@ -9,7 +9,7 @@ type SignInLinkProps = ComponentProps<'a'> & {
 export function SignInLink({ coverUrl, name, ...props }: SignInLinkProps){
     return(
       <a
-      className="flex flex-row items-center gap-2 p-2 border-[1px] border-zinc-900  "
+      className="flex items-center justify-center gap-2 py-1 px-2 transition-all cursor-pointer border-2 border-zinc-950 text-zinc-950 rounded hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:text-zinc-50 dark:border-zinc-50"
       { ...props }
       >
         <Image src={coverUrl} alt={`Login com ${name}`} height={14} width={14} />
